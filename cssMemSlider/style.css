@@ -1,0 +1,131 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./assets/image/ZRuv.gif);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-family: 'Barlow', sans-serif;
+}
+
+audio {
+  margin-top: 2rem;
+}
+
+.slider {
+  margin-top: 0.3rem;
+  width: 52rem;
+  padding: 1.25rem;
+  border-radius: 5%;
+  background-color: rgb(3 60 19 / 60%);
+}
+
+.slider__input {
+  display: none;
+}
+
+.carousel,
+.content__wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel__wrapper {
+  display: flex;
+  width: 500%;
+  transition: all 0.5s;
+}
+
+.slider__image {
+ width: 100%;
+ height: 100%;
+ border-radius: 5%;
+}
+
+article {
+  width: 20%;
+  height: 31rem;
+}
+
+.slider__dots {
+  display: flex;
+}
+
+.dot-item {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background: rgb(24 240 119);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.dot-item:active {
+  background: red;
+}
+
+.carousel__content {
+  margin-top: 0.625rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content__title {
+  width: 20%;
+  font-size: 1.5625rem;
+  font-weight: 400;
+  color: white;
+}
+
+.content {
+  display: flex;
+  width: 500%;
+  transition: all 0.5s;
+}
+
+label {
+  padding: 0 0.2rem;
+  cursor: pointer;
+}
+
+#s1:checked ~ .carousel .carousel__wrapper,
+#s1:checked ~ .carousel__content .content__wrapper  {
+  margin-left: 0;
+}
+
+#s2:checked ~ .carousel .carousel__wrapper,
+#s2:checked ~ .carousel__content .content {
+  margin-left: -100%;
+}
+
+#s3:checked ~ .carousel .carousel__wrapper,
+#s3:checked ~ .carousel__content .content {
+  margin-left: -200%;
+}
+
+#s4:checked ~ .carousel .carousel__wrapper,
+#s4:checked ~ .carousel__content .content {
+  margin-left: -300%;
+}
+
+#s5:checked ~ .carousel .carousel__wrapper,
+#s5:checked ~ .carousel__content .content {
+  margin-left: -400%;
+}
+
+#s1:checked ~ .carousel__content .slider__dots label:nth-child(1) div,
+#s2:checked ~ .carousel__content .slider__dots label:nth-child(2) div,
+#s3:checked ~ .carousel__content .slider__dots label:nth-child(3) div,
+#s4:checked ~ .carousel__content .slider__dots label:nth-child(4) div{
+  border: 0.125rem solid #d0edd8;;
+  background: transparent;
+}
