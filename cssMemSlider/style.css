@@ -13,6 +13,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
+  padding: 0 0.625rem;
   font-family: 'Barlow', sans-serif;
 }
 
@@ -22,7 +23,7 @@ audio {
 
 .slider {
   margin-top: 0.3rem;
-  width: 52rem;
+  max-width: 52rem;
   padding: 1.25rem;
   border-radius: 5%;
   background-color: rgb(3 60 19 / 60%);
@@ -68,8 +69,18 @@ article {
   transition: all 0.3s;
 }
 
+.dot-item:hover {
+  background: rgb(89, 184, 97);
+  cursor: pointer;
+}
+
+
 .dot-item:active {
-  background: red;
+  background: rgb(18, 92, 40);
+}
+
+.dot-item:active {
+  border-color: #dbca66 !important;
 }
 
 .carousel__content {
@@ -96,6 +107,8 @@ label {
   padding: 0 0.2rem;
   cursor: pointer;
 }
+
+
 
 #s1:checked ~ .carousel .carousel__wrapper,
 #s1:checked ~ .carousel__content .content__wrapper  {
@@ -129,3 +142,24 @@ label {
   border: 0.125rem solid #d0edd8;;
   background: transparent;
 }
+
+@media (max-width: 600px) {
+  .slider {
+    max-width: 100%;
+  }
+  
+  article {
+    height: auto;
+  }
+ }
+ 
+ @media (max-width: 450px) {
+   .carousel__content {
+     flex-direction: column;
+   }
+ 
+   .content__title {
+     margin-bottom: 2rem;
+     text-align: center;
+   }
+ }
