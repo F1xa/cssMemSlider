@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <title>cssMemSlider</title>
+</head>
+<body>
+  <audio autoplay="autoplay" controls>
+    <source src="./assets/123.mp3" type="audio/mp3">
+  </audio>
+  <div class="slider">
+      <input class="slider__input" type="radio" name="slide" id="s1" checked>
+      <input  class="slider__input" type="radio" name="slide" id="s2">
+      <input  class="slider__input" type="radio" name="slide" id="s3">
+      <input  class="slider__input" type="radio" name="slide" id="s4">
+      <div class="carousel">
+        <div class="carousel__wrapper">
+          <article>
+            <img class="slider__image" src="./assets/image/mem1.jpeg" alt="slider1">
+          </article>
+          <article>
+            <img class="slider__image" src="./assets/image/mem2.jpeg" alt="slider2">
+          </article>
+          <article>
+            <img class="slider__image" src="./assets/image/mem3.jpg" alt="slider3">
+          </article>
+          <article>
+            <img class="slider__image" src="./assets/image/mem4.png" alt="slider4">
+          </article> 
+        </div>
+      </div>
+      <div class="carousel__content">
+        <div class="content__wrapper">
+          <div class="content">
+            <p class="content__title">think about it...</p>
+            <p class="content__title">Накодила:)</p>
+            <p class="content__title">Жиза...</p>
+            <p class="content__title">ВолгаСкрипт:)</p>
+          </div>
+        </div>
+        <div class="slider__dots">
+          <label for="s1">
+            <div class="dot-item"></div>
+          </label>
+          <label for="s2">
+            <div class="dot-item"></div>
+          </label>
+          <label for="s3">
+            <div class="dot-item"></div>
+          </label>
+          <label for="s4">
+            <div class="dot-item"></div>
+          </label>
+        </div>
+      </div>
+  </div>
+</body>
+</html>
