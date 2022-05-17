@@ -12,6 +12,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100vh;
   width: 100%;
   padding: 0 0.625rem;
   font-family: 'Barlow', sans-serif;
@@ -147,7 +148,7 @@ label {
   .slider {
     max-width: 100%;
   }
-  
+
   article {
     height: auto;
   }
@@ -155,11 +156,12 @@ label {
  
  @media (max-width: 450px) {
    .carousel__content {
-     flex-direction: column;
+     flex-direction: column-reverse;
    }
  
    .content__title {
-     margin-bottom: 2rem;
-     text-align: center;
+     margin-top: 2rem;
+     text-align: start;
    }
  }
+ 
