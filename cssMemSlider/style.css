@@ -144,6 +144,14 @@ label {
   background: transparent;
 }
 
+#s1:checked ~ .carousel__content .slider__dots label:nth-child(1) div:hover,
+#s2:checked ~ .carousel__content .slider__dots label:nth-child(2) div:hover,
+#s3:checked ~ .carousel__content .slider__dots label:nth-child(3) div:hover,
+#s4:checked ~ .carousel__content .slider__dots label:nth-child(4) div:hover{
+  border: 0.125rem solid rgb(89, 184, 97);
+  background: transparent;
+}
+
 @media (max-width: 600px) {
   .slider {
     max-width: 100%;
@@ -164,4 +172,3 @@ label {
      text-align: start;
    }
  }
- 
